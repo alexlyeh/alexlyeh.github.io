@@ -1,0 +1,627 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="UTF-8">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+		<script type='text/javascript' src='js/jquery.min.js'></script>
+		<script type='text/javascript' src='js/jquery.stellar.min.js'></script>
+		<script type='text/javascript' src='js/script.js'></script>
+		 <link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+		<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link href="http://www.hshacks.com/img/hshacksLogo.png" rel="image_src" />
+		<title>HSHacks II</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<style type="text/css">
+			#header {
+				background-image: url("img/hshacksbg.png");
+			}
+			#about {
+				background-color: white;
+			}
+			#hook {
+				margin: 50 0px;
+				padding: 10px;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 400;
+				text-align: center;
+			}
+			#stats {
+				background-image: url("img/banner2HSHacks.jpg");
+				background-repeat: repeat;
+				background-size: cover;
+				background-attachment: fixed;
+				padding: 20px 0px;
+			}
+			#schedule {
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 800;
+				text-align: center;		
+			}
+			#sponsor {
+				padding: 0;
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 800;
+				text-align: center;
+			}
+			#stats-container {
+				margin: 0 auto;
+				font-size: 0;
+				text-align: center;
+			}
+			.stats-info {
+				display: inline-block;
+				width: 400px;
+				height: 300px;
+				font-family: Bebas_Neue;
+				font-size: 1rem;
+				text-align: center;
+			}
+			.stats-info-number {
+				color: rgb(56, 166, 245);
+				margin-top: 20px;
+				margin-bottom: 0;
+				padding-bottom: 0;
+				font-size: 120px;
+			}
+			.stats-info-description {
+				margin-top: 0;
+				margin-bottom: 0;
+				font-size: 80px;
+				color: white;
+			}
+			#faq-container {
+				max-width: 1250px;
+				margin: 0 auto;
+			}
+			#prev-sponsors {
+				padding: 20px 0px;
+			}
+			#sponsor-container {
+				margin: 0 auto;
+			}
+			.grid {
+				width: 250px;
+				height: 150px;
+				padding: 40px;
+				display: block;
+				float: left;
+				line-height: 150px;
+			}
+			.sponsor-img {
+				width: 250px;
+				vertical-align: middle;
+			}
+
+			#advocates {
+				padding: 20px 0px;
+				background-color: rgb(255, 255, 255);
+			}
+
+			#schedule {
+				padding: 20px 0px;
+				background-color: rgb(255, 255, 255);
+			}
+			.rand{display:inline; color: rgb(100, 100, 100);max-width: 5px; ; text-align: left;font-family: 'Open Sans', sans-serif; 				font-size: 25px;
+}
+
+		</style>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+			    setContainerWidth();
+			});
+			$(window).resize(function() {
+        		setContainerWidth();
+   			 });
+		    function setContainerWidth() {
+		    	var windowWidth = $(document).width();
+		        $('#sponsor-container').css('width', 'auto');
+		        var blockWidth = $('.grid').outerWidth(true);
+		        var maxBoxPerRow = Math.floor(windowWidth / blockWidth);
+		        $('#sponsor-container').width(maxBoxPerRow * blockWidth);
+		        $('#faq-container').css('width', 'auto');
+		        var blockWidth = $('.faqBlock').outerWidth(true);
+		        var maxBoxPerRow = Math.floor(windowWidth / blockWidth);
+		        $('#faq-container').width(maxBoxPerRow * blockWidth);
+		    }
+		</script>
+	</head>
+
+	<body>
+		<section id = "header" data-stellar-background-ratio=".6">
+			<div id = "header-content">
+				<img id = "logo" src = "img/hshacksLogo.png"/>
+				<p id = "header-title">HSHACKS II</p>
+				<p id = "header-date">Feb 7-8 | Paypal HQ</p>
+				<a href = "http://www.eventbrite.com/e/hs-hacks-ii-tickets-13721474299" class = "get-notified"><p>Register now!</p></a>
+			</div>
+		</section>
+
+		<section id = "about">
+			<p class = "section-title">What Is HSHACKS II?</p>
+			<div id = "about-content">
+				<p id = "description">HSHacks II is the return of the premier high school hackathon. More than 1000 high school students from around the country come to the Silicon Valley to turn ideas into a reality, all in 24 hours. With world class mentors, food, space, and more, you’re in for an amazing time. We welcome students of all hacking ability.
+				</p>
+				<p id = "hook">Last year HSHacks was phenomenal. This year </br>we’re going even bigger. Even better.</p>
+			</div>
+		</section>
+
+		<section id = "stats" data-stellar-background-ratio=".6" style = "position: relative;">
+			<p class = "section-title" style="color: white;">The original high school hackathon is back</p>
+			<div id = "stats-container">
+				<div class = "stats-info">
+					<p class = "stats-info-number">150+</p>
+					<p class = "stats-info-description">Hacks</p>
+				</div>
+				<div class = "stats-info">
+					<p class = "stats-info-number">1000+</p>
+					<p class = "stats-info-description">Hackers</p>
+				</div>
+				<div class = "stats-info">
+					<p class = "stats-info-number" >30+</p>
+					<p class = "stats-info-description">High Schools</p>
+				</div>
+			</div>
+		</section>
+
+<!-- 		<section id = "schedule">
+			<p class = "section-title" style = "color: white;">Schedule</p>
+			<p id = "copyright">Schedule Coming Soon!</p>
+		</section> -->
+		<section id = "schedule">
+			<p class = "section-title">Schedule</p>
+			<a href="https://docs.google.com/document/d/1pggfV5POLoHrhKvhA0sg5NZNJb_uvIbt5zYVu-yPQdQ/edit" id="sponsor">
+		<p id="sponsor">General Info</p>	
+		</a>
+			 <div style="display:inline; font-family: Bebas_Neue;font-size: 180%; max-width: 10%; color:rgb(89, 140, 190);" >
+					Saturday <br>
+				11:00AM: <p class="rand">Registration Opens, talk to sponsors</p><br>
+				12:00PM: <p class="rand">Kickoff Keynote</p><br>
+				1:00PM: <p class="rand">Hacking begins!</p><br>
+				1:30PM: <p class="rand">Lunch (Pizza)</p><br>
+				7:00PM: <p class="rand">Dinner (Pasta)</p><br>
+				8:00PM: <p class="rand">Women in Tech Panel in Workshop room 1</p><br>
+				1:00AM: <p class="rand"> Mystery Midnight Treat</p><br>
+				<br>Workshop Room 1 (Big)<br>
+				2:00PM: <p class="rand" >MakeSchool iOS Game Workshop (Beginner)</p><br>
+				3:00PM: <p class="rand">Web 1: HTML/CSS (Beginner)</p><br>
+				4:00PM: <p class="rand"> Web 2: JS</p><br> 
+				5:00PM: <p class="rand">MakeSchool Regular iOS Workshop</p><br>
+				6:00PM: <p class="rand">Oculus VR Demo</p><br>
+				<br>Workshop Room 2 (Small)<br>
+				2:00PM: <p class="rand" >MakeSchool iOS Game Workshop (Beginner)</p><br>
+				3:00PM: <p class="rand">Android 1(Beginner)</p><br>
+				4:00PM: <p class="rand">Android 2</p><br> 
+				5:00PM: <p class="rand">How to get into YC - Jeremy Rossman</p><br>
+				6:00PM: <p class="rand">Social Hacking - Max Rais</p><br>
+				<br>Sunday<br>
+				1:00AM: <p class="rand" >Breakfast (Donuts)</p><br>
+				12:00PM: <p class="rand">Lunch (Burgers)</p><br>
+				1:00PM: <p class="rand"> Hacking Ends, Submissions Due</p><br> 
+				2:00PM: <p class="rand">Expo-style Judging</p><br>
+				4:00PM: <p class="rand">Closing ceremony and awards!</p><br>
+			</div>
+				<br>
+		</section>
+
+		<section id = "faq">
+			<div id = "faq-container">
+				<p class = "section-title" style = "color: white;">FAQ</p>
+				<div id="q8" class="faqBlock">
+					<div class="question">What is HSHacks?</div>
+					<div class="answer">At HSHacks, likeminded high school students come together and use technology to transform ideas into reality. Students work in teams for 24 hours to code something amazing.</div>
+				</div>
+				<div id="q2" class="faqBlock">
+					<div class="question">Who is eligible to attend?</div>
+					<div class="answer">All high school students are welcome. You don't need to know how to code - HSHacks is a very beginner friendly event! Expect plenty of mentors and workshops.</div>
+				</div>
+				<div id="q3" class="faqBlock">
+					<div class="question">How much does it cost?</div>
+					<div class="answer">The event is completely free for all high school students. Admission is free, food is free, and swag is free!</div>
+				</div>
+				<div id="q4" class="faqBlock">
+					<div class="question">I don't know how to code... can I still come?</div>
+					<div class="answer">Of course! All students regardless of coding ability are welcome. We will be holding several beginner workshops (iOS, Android, Web), so come on out!</div>
+				</div>
+				<div id="q5" class="faqBlock">
+					<div class="question">What can I make?</div>
+					<div class="answer">Anything! You can build for web, mobile, Pebble, Google Glass, wearables, hardware, etc. Just make sure the project is made during the hackathon!</div>
+				</div>
+				<div id="q6" class="faqBlock">
+					<div class="question">What should I bring?</div>
+					<div class="answer">Bring your laptop, phone, chargers, and any other electronics you’ll need for the weekend (sleeping bag if you want).</div>
+				</div>
+				<div id="q7" class="faqBlock">
+					<div class="question">Do I need a team to sign up?</div>
+					<div class="answer">Not at all! We will have plenty of time for you to make teams, if you don't have one. You can also choose to work individually.</div>
+				</div>
+				<div id="q8" class="faqBlock">
+					<div class="question"> Can I work on an existing project?</div>
+					<div class="answer">Sorry, but for this hackathon, we ask that all coding must be done at the event. However, feel free to work on design, logos, or ideas.</div>
+				</div>
+			
+			</div>
+		</section>
+
+		<section id = "prev-sponsors">
+			<p class = "section-title">Sponsors</p>
+			 <a href="/sponsor.pdf" id="sponsor">
+			 	<p id = "sponsor">Interested in Sponsoring?</p>
+			 </a>
+			<div id = "sponsor-container"> 	
+				<div class = "grid"><a href="http://www.paypal.com"><img class = "sponsor-img" src = "sponsors/paypal.png"/></a></div>
+				<div class = "grid"><a href="http://www.ebay.com"><img class = "sponsor-img" src = "sponsors/ebay.png"/></a></div>
+				<div class = "grid"><a href="http://www.makeschool.com"><img class = "sponsor-img" src = "sponsors/makeschool.png"/></a></div>
+				<div class = "grid"><a href="http://www.microsoft.com"><img class = "sponsor-img" src = "sponsors/microsoft.png"/></a></div>
+				<div class = "grid"><a href="http://www.amd.com"><img class = "sponsor-img" src = "sponsors/amd.png"/></a></div>
+				<div class = "grid"><a href="http://www.wolframalpha.com"><img class = "sponsor-img" src = "sponsors/wolfram.png"/></a></div>
+				<div class = "grid"><a href="http://www.discoverpraxis.com"><img class = "sponsor-img" src = "sponsors/praxis.png"/></a></div>
+				<div class = "grid"><a href="http://www.pebble.com"><img class = "sponsor-img" src = "sponsors/pebble.png"/></a></div>
+				<div class = "grid"><a href="http://www.facebook.com"><img class = "sponsor-img" src = "sponsors/facebook.png"/></a></div>
+				<div class = "grid"><a href="http://www.paypal.com"><img class = "sponsor-img" src = "sponsors/thalmic.png"/></a></div>
+				<div class = "grid"><a href="http://www.intelligentheadset.com"><img class = "sponsor-img" src = "sponsors/intelligent.png"/></a></div>
+				<div class = "grid"><a href="http://www.unity3d.com"><img class = "sponsor-img" src = "sponsors/unity.png"/></a></div>
+				<div class = "grid"><a href="http://www.hacker.fund"><img class = "sponsor-img" src = "sponsors/hackerfund.png"/></a></div>
+				<div class = "grid"><a href="http://www.namecheap.com"><img class = "sponsor-img" src = "sponsors/namecheap.png"/></a></div>
+			</div>
+		</section>
+		<style>
+		
+		</style>
+
+	
+
+		<!-- <section id="advocates">
+			<ul class="ch-grid">
+			<p class = "section-title">TEAM</p>
+		<li>
+		<div class="ch-item ch-img-32">
+		<div class="ch-info">
+		<h3>Theresa Gao</h3>
+		<p>Director of Sponsorship<br>Dougherty Valley HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-33">
+		<div class="ch-info">
+		<h3>Claire Shu</h3>
+		<p>Director of Outreach<br>Piedmont Hills HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-34">
+		<div class="ch-info">
+		<h3>Aakash Boss</h3>
+		<p>Director of Logistics<br>Saratoga High School</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-30">
+		<div class="ch-info">
+		<h3>Spencer Yen</h3>
+		<p>Director of Technology<br>Saratoga High School</p>
+
+		<li>
+		<div class="ch-item ch-img-18">
+		<div class="ch-info">
+		<h3>Simon Deng</h3>
+
+		<p>Tech Team<br>Homestead HS</p>
+		</div>
+		</div>
+		</li>
+
+
+		<li>
+		<div class="ch-item ch-img-24">
+		<div class="ch-info">
+		<h3>Kamesh Vedula</h3>
+
+		<p>Sponsorship<br>Cupertino HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-31">
+		<div class="ch-info">
+		<h3>Alex Yeh</h3>
+		<p>Tech Team<br>Saratoga High School</p>
+		</div>
+		</div>
+		</li>
+
+
+		<li>
+		<div class="ch-item ch-img-14">
+		<div class="ch-info">
+		<h3>Mahesh Murag</h3>
+		<p>Tech Team<br>Monta Vista HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>	
+			<div class="ch-item ch-img-1">
+			<div class="ch-info">
+			<h3>Elana Shen</h3>
+			<p>Campus Hero<br>Menlo School</p>
+			</div>	
+			</div>
+			</li>
+
+		<li>
+		<div class="ch-item ch-img-2">
+		<div class="ch-info">
+		<h3>Tara Bhatia</h3>
+
+		<p>Campus Hero<br>Washington HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-3">
+		<div class="ch-info">
+		<h3>Nishtha  Bhatia</h3>
+
+		<p>Campus Hero<br>Washington HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-4">
+		<div class="ch-info">
+		<h3>Stephanie Mark</h3>
+
+		<p>Campus Hero<br>Burlingame HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-5">
+		<div class="ch-info">
+		<h3>Antonio Calbo-Jackson</h3>
+
+		<p>Campus Hero<br>Oakland Technical HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-6">
+		<div class="ch-info">
+		<h3>Yash Plorer</h3>
+
+		<p>Campus Hero<br>San Mateo</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-7">
+		<div class="ch-info">
+		<h3>Lan Paje</h3>
+
+		<p>Campus Hero<br>John F. Kennedy HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-29">
+		<div class="ch-info">
+		<h3>Ibrahim Ansari</h3>
+
+		<p>Campus Hero<br>Cupertino HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-8">
+		<div class="ch-info">
+		<h3>Krithika Yetchina</h3>
+
+		<p>Campus Hero<br>Lynbrook HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-9">
+		<div class="ch-info">
+		<h3>Youssef Sibih</h3>
+
+		<p>Campus Hero<br>Cupertino HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-10">
+		<div class="ch-info">
+		<h3>Vivian Shen</h3>
+
+		<p>Campus Hero<br>Aragon HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-11">
+		<div class="ch-info">
+		<h3>Bill Zhou</h3>
+
+		<p>Campus Hero<br>Monta Vista HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-12">
+		<div class="ch-info">
+		<h3>Janet Fang</h3>
+
+		<p>Campus Hero<br>Berkeley HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-13">
+		<div class="ch-info">
+		<h3>Mohit Jain</h3>
+
+		<p>Campus Hero<br>American HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-15">
+		<div class="ch-info">
+		<h3>Justin Yang</h3>
+
+		<p>Campus Hero<br>Henry M. Gunn HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-16">
+		<div class="ch-info">
+		<h3>Dhanush Patel</h3>
+
+		<p>Campus Hero<br>California HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-17">
+		<div class="ch-info">
+		<h3>Joanne Ma</h3>
+
+		<p>Campus Hero<br>Evergreen Valley HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-19">
+		<div class="ch-info">
+		<h3>Selynna Sun</h3>
+
+		<p>Campus Hero<br>Los Altos HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-20">
+		<div class="ch-info">
+		<h3>Keshav Rao</h3>
+
+		<p>Campus Hero<br>Mission San Jose HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-21">
+		<div class="ch-info">
+		<h3>Sayan Ghosh</h3>
+
+		<p>Campus Hero<br>Mission San Jose HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-22">
+		<div class="ch-info">
+		<h3>Nikita Vemuri</h3>
+
+		<p>Campus Hero<br>Archbishop Mitty HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-23">
+		<div class="ch-info">
+		<h3>Aakash Adesara</h3>
+
+		<p>Campus Hero<br>Cupertino HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-25">
+		<div class="ch-info">
+		<h3>Meghna Satish</h3>
+
+		<p>Campus Hero<br>American HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-26">
+		<div class="ch-info">
+		<h3>Jesse Gao</h3>
+
+		<p>Campus Hero<br>California HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-27">
+		<div class="ch-info">
+		<h3>Elaine Chien</h3>
+
+		<p>Campus Hero<br>Piedmont Hills HS</p>
+		</div>
+		</div>
+		</li>
+
+		<li>
+		<div class="ch-item ch-img-28">
+		<div class="ch-info">
+		<h3>Elaine Zhang</h3>
+
+		<p>Campus Hero<br>Piedmont Hills HS</p>
+		</div>
+		</div>
+		</li>
+
+		</ul>
+
+		<a href="https://docs.google.com/forms/d/1O-l6P22VFWUkbpTXwGt80-iKcfDOfWOaaZmc1odxyxQ/viewform?c=0&w=1" id="sponsor">
+		<p id="sponsor">Interested in becoming a campus hero?</p>	
+		</a>
+		</section> -->
+
+		<section id = "footer">
+			<a href = "http://www.eventbrite.com/e/hs-hacks-ii-tickets-13721474299" class = "get-notified"><p>Register now!</p></a>
+			<p id = "copyright">&copy 2014-2015 High School Hacks. All Rights Reserved.</p>
+		</section>
+</html>
+	</body>
+
+</html>

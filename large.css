@@ -1,0 +1,399 @@
+@font-face {
+	font-family: 'Quark-Light';
+	src: url("fonts/Quark-Light.otf");
+}
+
+@font-face {
+	font-family: 'Quark-Bold';
+	src: url("fonts/Quark-Bold.otf");
+}
+
+@font-face {
+	font-family: 'Orkney';
+	src: url("fonts/Orkney-Regular.otf");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+a {
+	-webkit-transition: .3s all;
+	-moz-transition: .3s all;
+	-o-transition: .3s all;
+	transition: .3s all;
+}
+
+a:link {
+	text-decoration: none;
+	color: black;
+}
+
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: rgb(216, 191, 0);
+}
+
+#center-div {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 50%;
+	min-width: 500px;
+	padding: 20px;
+	-webkit-transition: .3s all;
+	-moz-transition: .3s all;
+	-o-transition: .3s all;
+	transition: .3s all;
+	height: 45vh;
+	max-height: 500px;
+	min-height: 350px;
+}
+
+.main-card {
+	-webkit-transition: .3s all;
+	-moz-transition: .3s all;
+	-o-transition: .3s all;
+	transition: .3s all;
+}
+
+.corner {
+	position: absolute;
+	width: 0;
+	height: 0;
+	z-index: -1;
+	-webkit-transition: .4s height .4s ease-out, .4s width .7s ease-out;
+	-moz-transition: .4s height .4s ease-out, .4s width .7s ease-out;
+	-o-transition: .4s height .4s ease-out, .4s width .7s ease-out;
+	transition: .4s height .4s ease-out, .4s width .7s ease-out;
+}
+
+#right-corner {
+	right: 0;
+	top: 0;
+	border-top: solid rgb(216, 191, 0) 2px;
+	border-right: solid rgb(216, 191, 0) 2px;
+}
+
+#left-corner {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-left: solid rgb(216, 191, 0) 2px;
+	border-bottom: solid rgb(216, 191, 0) 2px;
+}
+
+#underline {
+	position: absolute;
+	left: 36px;
+	width: 0;
+	z-index: -1;
+	border-bottom: solid rgb(216, 191, 0) 2px;
+	-webkit-transition: .4s all .7s ease;
+	-moz-transition: .4s all .7s ease;
+	-o-transition: .4s all .7s ease;
+	transition: .4s all .7s ease;
+}
+
+#name {
+	display: inline-block;
+	margin-top: 24px;
+	margin-bottom: 0;
+	padding-bottom: 1px;
+	margin-left: 20px;
+	font-family: Quark-Light;
+	color: rgb(80, 80, 80); /*rgb(216, 191, 0);*/
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+
+#cs {
+	position: absolute;
+	right: 30px;
+	top: 12px;
+	font-family: Quark-Light;
+	color: rgb(80, 80, 80); /*rgb(216, 191, 0);*/
+	font-size: 35px;
+	
+}
+
+.break {
+	font-family: Orkney;
+	font-size: 45px;
+}
+
+.break-small {
+	font-family: Orkney;
+	color: #F7934C;
+}
+
+#section-div {
+	position: absolute;
+	right: 50px;
+	bottom: 20px;
+}
+
+.sections {
+	font-family: Quark-Light;
+	color: rgb(80, 80, 80); /*rgb(216, 191, 0);*/
+	font-size: 28px;
+	letter-spacing: 6px;
+	text-align: right;
+	-webkit-transition: .2s all;
+	-moz-transition: .2s all;
+	-o-transition: .2s all;
+	transition: .2s all;
+}
+
+.sections:hover {
+	color: rgb(216, 191, 0);
+	cursor:default;
+}
+
+#contact-div {
+	position: absolute;
+	bottom: 20px;
+	left: 50px;
+}
+
+.contact {
+	font-family: Quark-Light;
+	color: rgb(80, 80, 80); /*rgb(216, 191, 0);*/
+	font-size: 20px;
+	letter-spacing: 5px;
+	line-height: 48px;
+}
+
+.section {
+	opacity: 0;
+	display: none;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: .5s all .1s;
+	-moz-transition: .5s all .1s;
+	-o-transition: .5s all .1s;
+	transition: .5s all .1s;
+}
+
+#left-about {
+	position: absolute;
+	background-image: url("images/me.png");
+	background-size: cover;
+	background-position: left bottom;
+	width: 50%;
+	height: 100%;
+}
+
+#right-about {
+	position: absolute;
+	right: 0;
+	width: 50%;
+	height: 100%;
+}
+
+#about-title {
+	padding: 50px;
+	padding-top: 0;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding-bottom: 0;
+	font-size: 5vw;
+	font-family: Orkney;
+	color: #F7934C;
+}
+
+#about-subtitle {
+	padding: 50px;
+	font-size: 3vw;
+	font-family: Quark-Light;
+	margin-top: 0;
+	padding-top: 0;
+} 
+
+#about-content {
+	position: absolute;
+	bottom: 0;
+	padding: 50px;
+	font-size: 1.8vw;
+	font-family: Quark-Light;
+	margin-top: 20px;
+	padding-top: 0;
+	margin-bottom: 20px;
+	padding-bottom: 0;
+	padding-right: 10px;
+	letter-spacing: 2.0px;
+}
+
+.x {
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	right: 10px;
+	z-index: 10;
+	-webkit-transition: .2s all;
+	-moz-transition: .2s all;
+	-o-transition: .2s all;
+	transition: .2s all;
+}
+
+.x:hover {
+	color: gray;
+	cursor:default;
+}
+
+.skills {
+	font-family: Orkney;
+	color: #37718E;
+}
+
+#experience-section {
+	position: relative;
+}
+
+#experience-container {
+	position: absolute;
+	height: 85%;
+	word-spacing: -7px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	word-spacing: 0px;
+}
+
+.job {
+	width: 25%;
+	height: 100%; 
+	float: left;
+	padding: 0;
+}
+
+.job-logo-container {
+	height: 20%;
+}
+
+.job-logo {
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+	min-width: 150px;
+}
+
+.job-title {
+	text-align: center;
+	font-family: Quark-Bold;
+	font-size: 2.0vw;
+	padding: 10px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.job-time {
+	text-align: center;
+	font-family: Quark-Light;
+	font-size: 1.5vw;
+	letter-spacing: 2px;
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 2px;
+
+}
+
+.job-desc {
+	font-family: Quark-Light;
+	font-size: 1.5vw;
+	color: rgb(100, 100, 100);
+	padding: 15px;
+	padding-top: 5px;
+	margin-top: 5px;
+}
+
+#hshacks-logo {
+	width: 45%;
+	min-width: 120px;
+	position: absolute;
+	top: -35%;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#project-section {
+	position: relative;
+}
+
+#project-container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.project-title {
+	font-family: Orkney;
+	font-size: 2.2vw;
+	text-decoration: underline;
+	margin: 0;
+	padding: 20px;
+	padding-bottom: 5px;
+	letter-spacing: 2px;
+}
+
+.project-section {
+	clear: both;
+}
+
+.portfolio-icons {
+	width: 10.5%;
+	border-radius: 18%;
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.web-image {
+	margin-left: 20px;
+	margin-right: 20px;
+	border: solid lightgray 1px;
+	width: 27%;
+	float: left;
+	min-width: 240px;
+	margin-bottom: 25px;
+}
+
+.section-title {
+	display: none;
+}
+
+#contact-div-bottom {
+	display: none;
+}
+
+@media (max-width: 1100px) {
+	#about-content {
+		font-size: 2.1vw;
+	}
+
+	.job-desc {
+		font-size: 16.5px;
+	}
+}
+
+@media (max-width: 900px) {
+	#about-content {
+		font-size: 2.3vw;
+	}
+
+	.job-desc {
+		font-size: 14.5px;
+	}
+}

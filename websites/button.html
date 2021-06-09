@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alex Yeh</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		input::-webkit-input-placeholder {
+			color: gray;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 300;
+		}
+
+		input:-ms-input-placeholder {
+			color: gray;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 300;
+		}
+
+		input:-moz-placeholder {
+			color: gray;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 300;
+		}
+
+		input::-moz-placeholder {
+			color: gray;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 300;
+		}
+
+		textarea::-webkit-input-placeholder {
+			color: gray;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 300;
+		}
+
+		textarea:-ms-input-placeholder {
+			color: gray;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 300;
+		}
+
+		textarea:-moz-placeholder {
+			color: gray;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 300;
+		}
+
+		textarea::-moz-placeholder {
+			font-family: 'Raleway', sans-serif;
+					font-weight: 300;
+		}
+
+		#body {
+			font-family: 'Raleway';
+			font-weight: 300;
+			margin: 0;
+			padding: 0;
+		}
+
+		#navbar {
+			width: 100%;
+			display: inline-block;
+			position: relative;
+			height: 80px;
+			position: fixed;
+			z-index: 9999;
+			background-color: black;
+			-webkit-transition: .5s all;
+			-moz-transition: .5s all;
+			-o-transition: .5s all;
+			transition: .5s all;
+		}
+
+		.animated05 { 
+			-webkit-transition: .5s all;
+			-moz-transition: .5s all;
+			-o-transition: .5s all;
+			transition: .5s all;
+		}
+
+		#container {
+			/*background-color: red;*/
+			width: 200px;
+			position: absolute;
+			z-index: 99;
+			right: 0;
+			top: 0;
+			height: 60px;
+		}
+
+		#button {
+			display: block;
+			border: solid rgb(200, 200, 200) 2px;
+			color: white;
+			border-radius: 30px;
+			font-size: 20px;
+			text-align: center;
+			width: 150px;
+			margin: 0 auto;
+			margin-top: 12.5px; 
+			height: 48px;
+		}
+
+		#button:hover{
+			background-color: white;
+		}
+
+		#contact-us{
+			font-size: 17px;
+			padding: 10px;
+			margin: 0;
+
+		}
+
+		#button:hover #contact-us{
+			color: #00bff2;
+		}
+
+		#formdiv {
+			position: absolute;
+			width: 100%;
+			height: 640px;
+			top: -999px;
+		  	left: 50%;
+		  	transform: translate(-50%, -50%);
+		  	-webkit-transform: translate(-50%, -50%);
+		  	-moz-transform: translate(-50%, -50%);
+		  	-ms-transform: translate(-50%, -50%);
+			opacity: 0;
+			-webkit-transition: .1s top .1s;
+			-moz-transition: .1s top .1s;
+			-o-transition: .1s top .1s;
+			transition: .1s top .1s;
+		}
+
+		.contact-text {
+			background-color: rgba(0, 0, 0, 0.1);
+			width: 80%;
+			height: 30px;
+			border: none;
+			/*border-bottom: solid white 2px;*/
+			margin: 20px;
+			font-size: 16px;
+			color: black;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 300;
+			display: none;
+		}
+
+		.big-contact-text {
+			background-color: rgba(0, 0, 0, 0.1);
+			width: 80%;
+			height: 280px;
+			border: none;
+			/*border-bottom: solid white 2px;*/
+			margin: 20px;
+			font-size: 16px;
+			color: black;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 300;
+			display: none;
+		}
+
+		#drop-note {
+			color: #00bff2;
+			display: inline-block !important;
+			padding: 15px 20px 15px 20px !important;
+			border: solid #00bff2 1px !important;
+			border-radius: 35px;
+			margin: 20px;
+			-webkit-transition: .5s all;
+			-moz-transition: .5s all;
+			-o-transition: .5s all;
+			transition: .5s all;
+		}
+
+		#drop-note:hover {
+			color: white;
+			background-color: #00bff2 !important;
+		}
+
+		#x {
+			display: none;
+			color: #00bff2;
+			position: absolute;
+			top: 10px;
+			right: 8%;
+			margin: auto;
+			font-size: 30px;
+		}
+
+		#x p{
+			margin: 12px;
+			margin-top: 5px;
+			display: inline-block;
+			-webkit-transition: .3s all;
+			-moz-transition: .3s all;
+			-o-transition: .3s all;
+			transition: .3s all;
+			cursor:default;
+		}
+
+		#x p:hover {
+			color: rgba(0, 191, 242, 0.5) !important;
+		}
+	</style>
+
+	<script type="text/javascript">
+		var expand = function () {
+			$("#container").css({
+				'width' : '50%',
+				'height' : '100vh',
+				'position' : 'fixed',
+				'border-left' : 'solid lightgray 2px'
+			});
+
+			$("#button").css({
+				'width' : '100%',
+				'height' : '100%',
+				'background-color' : 'white',
+				'border-radius' : '0px',
+				'border' : 'none',
+				'margin' : '0 auto',
+				'color' : '#00bff2'
+			});
+
+			$('#contact-us').css({
+				'padding-top' : '25px'
+			});
+
+			$("#formdiv").css({
+				'opacity' : '1',
+				'top' : '50%',
+			});
+
+			$(".contact-text").css({
+				'display' : 'initial'
+			});
+
+			$(".big-contact-text").css({
+				'display' : 'initial'
+			});
+
+			$("#x").css({
+				'display' : 'block'
+			});
+
+			$('#button').removeAttr('onmousedown');
+		}
+
+		var mini = function () {
+			$("#container").css({
+				'width' : '300px',
+				'height' : '60px'
+			});
+			$("#container").removeAttr('style');
+			$('#button').removeAttr('style');
+			$('#formdiv').removeAttr('style');
+			$('.contact-text').removeAttr('style');
+			$('.big-contact-text').removeAttr('style');
+			$('#x').removeAttr('style');
+			$('#contact-us').removeAttr('style');
+
+			$('#button').attr('onmousedown', "expand()");
+		}
+	</script>
+</head>
+<body>
+	<div id = "navbar">
+		<div class = "animated05" id = "container"> 
+			<div class = "animated05" id = "button" onmousedown="expand();">
+				<p class = "animated05" id = "contact-us">Contact Us</p>
+				<div class = "animated05" id = "formdiv">
+					<form>
+						<input class = "contact-text animated05" type="text" name="firstname" placeholder="Name">
+						<input class = "contact-text animated05" type="email" name="firstname" placeholder="Email">
+						<input class = "contact-text animated05" type="phone" name="firstname" placeholder="Phone">
+						<textarea class = "animated05 big-contact-text" name="firstname" placeholder="Message"></textarea>
+						<div id = "drop-note">Drop us a note!</div>
+					</form>
+				</div>
+				<div style = "" id = "x"><p onclick="mini();">&times;</p></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

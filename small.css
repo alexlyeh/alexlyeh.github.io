@@ -1,0 +1,269 @@
+@font-face {
+	font-family: 'Quark-Light';
+	src: url("fonts/Quark-Light.otf");
+}
+
+@font-face {
+	font-family: 'Quark-Bold';
+	src: url("fonts/Quark-Bold.otf");
+}
+
+@font-face {
+	font-family: 'Orkney';
+	src: url("fonts/Orkney-Regular.otf");
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	-webkit-transition: .3s all;
+	-moz-transition: .3s all;
+	-o-transition: .3s all;
+	transition: .3s all;
+}
+
+a:link {
+	text-decoration: none;
+	color: black;
+}
+
+a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: rgb(216, 191, 0);
+}
+
+#center-div {
+	padding: 20px;
+	width: initial !important;
+}
+
+#mobile-content-sections{
+	padding: 20px;
+}
+
+#mobile-main-card {
+	height: 100vh;
+	width: 100%;
+	background-color: rgb(253, 253, 253);
+}
+
+#mobile-center-div {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	height: 400px;
+	padding: 10px;
+	width: 80%;
+	min-width: 348px;
+}
+
+.corner {
+	position: absolute;
+	width: 0;
+	height: 0;
+	z-index: 10;
+	-webkit-transition: .4s height .4s ease-out, .4s width .7s ease-out;
+	-moz-transition: .4s height .4s ease-out, .4s width .7s ease-out;
+	-o-transition: .4s height .4s ease-out, .4s width .7s ease-out;
+	transition: .4s height .4s ease-out, .4s width .7s ease-out;
+}
+
+
+#right-corner {
+	right: 0;
+	top: 0;
+	border-top: solid rgb(216, 191, 0) 2px;
+	border-right: solid rgb(216, 191, 0) 2px;
+}
+
+#left-corner {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-left: solid rgb(216, 191, 0) 2px;
+	border-bottom: solid rgb(216, 191, 0) 2px;
+}
+
+#underline {
+	display: none;
+}
+
+#name {
+	display: block !important;
+	text-align: center !important;
+	font-family: Quark-Light;
+	color: rgb(80, 80, 80); /*rgb(216, 191, 0);*/
+	font-size: 60px;
+	letter-spacing: 2px;
+	margin: 0;
+	padding: 0;
+	padding-top: 78px;
+}
+
+#cs {
+	font-family: Quark-Light;
+	color: rgb(80, 80, 80); /*rgb(216, 191, 0);*/
+	font-size: 65px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	
+}
+
+.break {
+	font-family: Orkney;
+	font-size: 65px;
+}
+
+.break-small {
+	font-family: Orkney;
+	color: #F7934C;
+}
+
+.skills {
+	font-family: Orkney;
+	color: #37718E;
+}
+
+#section-div {
+	display: none;
+}
+
+#contact-div {
+	width: 364px;
+	margin: 0 auto;
+}
+
+.contact {
+	font-family: Quark-Light;
+	color: rgb(80, 80, 80);
+	font-size: 17px;
+	letter-spacing: 2px;
+	float: left;
+	margin: 10px;
+}
+
+.x {
+	display: none;
+}
+
+.section-title {
+	clear: both;
+	text-align: center;
+	padding-top: 50px;
+	font-family: Orkney;
+	font-size: 50px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+#about-title {
+	display: none;
+}
+
+#about-subtitle {
+	display: none;
+} 
+
+#about-content {
+	clear: both;
+	font-size: 20px;
+	font-family: Quark-Light;
+	margin-bottom: 20px;
+	padding: 20px;
+	letter-spacing: 2.0px;
+	padding-top: 0px; 
+	margin-top: 10px;
+}
+
+.project-title {
+	font-family: Quark-Light;
+	font-size: 40px;
+	text-decoration: underline;
+	margin: 0;
+	padding: 20px;
+	padding-bottom: 5px;
+	letter-spacing: 2px;
+}
+
+.project-section {
+	clear: both;
+}
+
+.portfolio-icons {
+	width: 20.5%;
+	border-radius: 18%;
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.web-image {
+	display: block;
+	border: solid lightgray 1px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.job {
+	display: block;
+	padding: 0;
+}
+
+.job-logo {
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.job-title {
+	text-align: center;
+	font-family: Quark-Bold;
+	font-size: 30px;
+	padding: 10px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+
+.job-time {
+	text-align: center;
+	font-family: Quark-Light;
+	font-size: 30px;
+	letter-spacing: 2px;
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 2px;
+
+}
+
+.job-desc {
+	font-family: Quark-Light;
+	font-size: 25px;
+	color: rgb(100, 100, 100);
+	text-align: left;
+	padding: 15px;
+	padding-top: 5px;
+	margin-top: 5px;
+}
+
+#hshacks-logo {
+	width: 50%;
+}
+
+#contact-div-bottom {
+	width: 364px;
+	margin: 0 auto;
+}

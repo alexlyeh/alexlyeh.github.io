@@ -1,0 +1,189 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<link rel="shortcut icon" href="/favicon1.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon1.ico" type="image/x-icon">
+	<script type = "text/javascript" src="jquery.js"></script>
+	<script type = "text/javascript" src = "jslider.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:300' rel='stylesheet' type='text/css'>
+	<script type = "text/javascript">
+		$(function(){
+			$(".slider").jslider({
+				btnNext: ".next",
+				btnPrev: ".prev"
+			})
+
+			$(".slider2").jslider({
+				btnNext: ".next",
+				btnPrev: ".prev"
+			})
+		});
+	</script>
+
+	<style type="text/css">
+		body {
+			background-color: white;
+		}
+
+		@font-face {
+			font-family: Recco;
+			src: url(hansolov3.ttf);
+		}
+
+		#container {
+			width: 900px;
+			height: 550px;
+			margin: auto;
+			position: absolute;
+  			top: 0; left: 0; bottom: 0; right: 0;
+
+		}
+
+		#text-portion {
+			float: left;
+			width: 550px;
+			height: 430px;
+			margin-top: 60px;
+		}
+
+		#title {
+			font-family: Recco;
+			color: rgb(231, 76, 60);
+			font-size: 100px;
+			margin: 0;
+			padding: 0;
+		}
+
+		.slider{
+			float:left;
+			width: 550px;
+			height: 180px; 
+		}
+
+		#container2 {
+
+		}
+
+		.feature {
+			font-family: 'Oxygen', sans-serif;
+			font-size: 50px;
+			padding: 0;
+			margin: 0;
+			margin-top: 15px;
+		}
+
+		#get-app {
+			clear: both;
+			background color: green;
+			width: 180px;
+			height: 70px;
+			border: solid rgba(231, 76, 60, 0.4) 1px;
+			font-size: 30px;
+			font-family: 'Oxygen', sans-serif;		
+			text-align: center;
+			-webkit-transition: .2s all;
+			-moz-transition: .2s all;
+			-o-transition: .2s all;
+			transition: .2s all;
+		}
+
+		#get-app:hover{
+			color: white;
+			background-color: rgba(231, 76, 60, 0.8);
+		}
+
+		#credits {
+			margin-top: 30px;
+			font-family: 'Oxygen', sans-serif;
+		}
+
+		.creator {
+			color: rgba(231, 76, 60, 1.0);
+		}
+
+		.creator:link {
+			color: rgba(231, 76, 60, 1.0);
+		}
+
+		.creator:visited {
+			color: rgba(231, 76, 60, 1/0);
+		}
+
+		#screenshot-portion {
+			float: right;
+			width: 265px;
+			height: 550px;
+			background-image: url(iPhone.png);
+			background-repeat: no-repeat;
+			background-size: 265px 550px;
+		}
+
+		#getApp:link {
+			text-decoration: none;
+			color: black;
+		}
+
+		#getApp:visited {
+			color: black;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<div id = "container">
+		<div id = "text-portion">
+			<p id = "title">Recco</p>
+			<div id = "container2"> 
+				<div class = "slider">
+					<ul>
+						<li style = "height: 250px;">
+							<p class = "feature">Swipe through movie recommendations</p>
+						</li>
+
+            			<li style = "height: 250px;">
+            				<p class = "feature">View synopses, ratings, previews, and more</p>
+            			</li>
+
+            			<li style = "height: 250px;">
+            				<p class = "feature">See a collection of movies you liked</p>
+            			</li>
+					</ul>
+				</div>
+			</div>
+			<a id = "getApp" href = "https://itunes.apple.com/us/app/recco-swipeable-movie-recommendations/id898657896?mt=8">
+				<div id = "get-app">
+					<p style=" margin-top: 15px;">Get Recco</p>
+				</div>
+			</a>
+			<div id = "credits">
+				<p>Made by <a href = "http://spenceryen.com/" class = "creator">Spencer Yen</a> and <a href = "http://alexlyeh.com/" class = "creator">Alex Yeh</a> </br>&copy Recco</p>
+			</div>
+		</div>
+
+		<div id = "screenshot-portion">
+			<div id = "container2" style = "margin-left: 23px; margin-top: 80px;"> 
+				<div class = "slider2">
+					<ul>
+						<li>
+							<img src = "screenshot2.png" width = "223" height = "390">
+						</li>
+							
+            			<li>
+            				<img src = "screenshot4.png" width = "223" height = "390">
+            			</li>
+
+            			<li>
+            				<img src = "screenshot5.png" width = "223" height = "390">
+            			</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	 </div>
+</body>
+
+</html>
