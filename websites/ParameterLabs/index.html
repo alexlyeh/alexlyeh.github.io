@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+	<title>Parameter Labs</title>
+	<meta charset="UTF-8">
+	<script type='text/javascript' src='js/jquery.min.js'></script>
+	<script type='text/javascript' src='js/script.js'></script>
+	<style type="text/css">
+		@font-face {
+			font-family: Fairview;
+			src: url("Fairview/Fairview_Regular.otf");
+		}
+
+		@font-face {
+			font-family: Gaspar;
+			src: url("gaspar/Gaspar_Regular.otf");
+		}
+
+		html, body {
+			height: 100%;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+		}
+
+		#bgvid {
+			position: fixed;
+			right: 0; 
+			bottom: 0;
+			min-width: 100%; min-height: 100%;
+			width: auto; height: auto; z-index: -100;
+			background: url("img/placeholder.png") no-repeat;
+			background-size: cover;
+		}
+
+		@media screen and (max-device-width: 500px) {
+			html { background: url("img/placeholder.png") #000 no-repeat center center fixed; background-size: cover;}
+			#bgvid { display: none; }
+		} 
+
+		#video-container {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			z-index: -1;
+		}
+
+		#main {
+			background-image: url("img/pattern2.png");
+			height: 100vh;
+		}
+
+		#name {
+			font-family: Fairview;
+			padding: 0;
+			margin: 0;
+			font-size: 150px;
+			color: white;
+			text-shadow: 0px 3px black;
+			text-align: center;
+		}
+
+		#slogan {
+			font-family: Gaspar;
+			padding: 0;
+			margin: 0;
+			color: white;
+			font-size: 35px;
+			text-align: center;
+			padding: 15px;
+			text-shadow: 0px 1px black;
+		}
+
+		#main-content-container {
+			height: 230px;
+			padding: 20px;
+			margin: auto;
+			position: absolute;
+			top: 0; left: 0; bottom: 0; right: 0;
+		}
+
+		#apps {
+			padding: 20px 0px;
+			background-image: url("img/blackbackground2.png");
+			overflow: auto
+		}
+
+		#apps-container {
+			margin: 0 auto;
+		}
+
+		.grid {
+			width: 200px;
+			height: 200px;
+			padding: 40px;
+			display: block;
+			float: left;
+			line-height: 150px;
+		}
+
+		.portfolio-icons {
+			height: 200px;
+			border-radius: 40px;
+			float: left;
+			vertical-align: middle;
+		}
+
+		.section-title {
+			font-family: Gaspar;
+			color: white;
+			font-size: 90px;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			text-shadow: 0px 1px black;
+		}
+
+		#people {
+			padding: 20px 0px;
+			overflow: auto;
+			background-image: url("img/pattern2.png");
+		}
+
+		#people-container {
+			clear: both;
+			margin: 0 auto;
+		}
+
+		.profile {
+			width: 220px;
+			border-radius: 110px;
+			border-width: 2px;
+			border-color: white;
+			border-style: solid;
+			margin-top: 10px;
+		}
+
+		.people-grid {
+			width: 380px;
+			display: block;
+			float: left;
+			padding: 20px;
+			margin: 10px;
+			text-align: center;
+			background-color: rgba(255, 255, 255, 0.5);
+		}
+
+		.name, .title{
+			font-family: Gaspar;
+			font-size: 40px;
+		}
+
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			setContainerWidth();
+		});
+
+		$(window).resize(function() {
+      		setContainerWidth();
+  		});
+
+	    function setContainerWidth() {
+	    	var windowWidth = $(document).width();
+
+	        $('#apps-container').css('width', 'auto');
+		    var blockWidth = $('.grid').outerWidth(true);
+	        var maxBoxPerRow = Math.floor(windowWidth / blockWidth);
+	        $('#apps-container').width(maxBoxPerRow * blockWidth);
+
+	        $('#people-container').css('width', 'auto');
+		    var blockWidth = $('.people-grid').outerWidth(true);
+	        var maxBoxPerRow = Math.floor(windowWidth / blockWidth);
+	        $('#people-container').width(maxBoxPerRow * blockWidth);
+	    }
+	</script>
+</head>
+
+<body>
+	<div id = "video-container">
+		<video autoplay loop poster= "img/placeholder.png" id="bgvid">
+			<source src="movie/PARAMETERLABS.m4v" type="video/webm">
+		</video>
+	</div>
+
+	<section id = "main">
+		<div id="main-center">
+			<div id = "main-content-container">
+				<p id = "name">[PARAMETER LABS]</p>
+				<p id = "slogan">we build apps.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id = "apps">
+		<div id = "apps-container">
+			<div class = "grid"><a href = "http://getfeather.com/"><img class = "portfolio-icons" src = "img/Feather1024.png"/></a></div>
+			<div class = "grid"><a href = "https://itunes.apple.com/us/app/hshacks/id827168843?mt=8"><img class = "portfolio-icons" src = "img/Icon-76@2x.png"/></a></div>
+			<div class = "grid"><a href = "https://itunes.apple.com/us/app/evdder/id590607951?ls=1&mt=8"><img class = "portfolio-icons" src = "img/itunesart.png"/></a></div>
+			<div class = "grid"><a href = "http://vybeapp.com/"><img class = "portfolio-icons" src = "img/vybeIcon512.png"/></a></div>
+			<div class = "grid"><a href = "https://itunes.apple.com/us/app/vicinitime/id689105598?mt=8"><img class = "portfolio-icons" src = "img/vicinitime.png"/></a></div>
+			<div class = "grid"><a href = "https://itunes.apple.com/us/app/crowded!/id889885298?ls=1&mt=8"><img class = "portfolio-icons" src = "img/Crowded1024.png"/></a></div>
+			<div class = "grid"><a href = "http://reccoapp.com/"><img class = "portfolio-icons" src = "img/recco.png"/></a></div>
+			<div class = "grid"><a href = "https://itunes.apple.com/us/app/the-shs-app/id559577630?mt=8"><img class = "portfolio-icons" src = "img/SHSAppIcon.png"/></a></div>
+			<div class = "grid"><a href = "https://itunes.apple.com/us/app/dodge-a-game-of-reflexes/id842376129?mt=8"><img class = "portfolio-icons" src = "img/DodgeIcon.png"/></a></div>
+			<div class = "grid"><a href = "https://itunes.apple.com/us/app/in+egers/id687608499?ls=1&mt=8"><img class = "portfolio-icons" src = "http://a2.mzstatic.com/us/r30/Purple/v4/e7/8a/6e/e78a6e57-e75c-0632-f765-884f01e6084f/icon340x340.png"/></a></div>
+			<div class = "grid"><a href = "https://itunes.apple.com/us/app/whack/id550733084?ls=1&mt=8"><img class = "portfolio-icons" src = "http://a4.mzstatic.com/us/r30/Purple/v4/11/bf/47/11bf470e-7e7e-87e0-205a-062beebe0448/icon340x340.png"/></a></div>
+			<div class = "grid"><a href = ""><img class = "portfolio-icons" src = "img/timely_icon_v1.png"/></a></div>
+		</div>
+	</section>
+
+	<section id = "people">
+		<div id = "people-container">
+
+			<div class = "people-grid">
+				<a href = "http://spenceryen.com"><img class = "profile" src = "img/spencer.jpg"/></a>
+				<p class = "name">Spencer Yen</p>
+				<p class = "title">iOS Developer</p>
+			</div>
+
+			<div class = "people-grid">
+				<a href = "http://aakashthumaty.com"><img class = "profile" src = "img/aakash2.jpg"/></a>
+				<p class = "name">Aakash Thumaty</p>
+				<p class = "title">iOS Developer</p>
+			</div>
+
+			<div class = "people-grid">
+				<a href = "http://alexlyeh.com"><img class = "profile" src = "img/alex.png"/></a>
+				<p class = "name">Alex Yeh</p>
+				<p class = "title">iOS Developer</p>
+			</div>
+
+			<div class = "people-grid">
+				<a href = ""><img class = "profile" src = "img/andy.png"/></a>
+				<p class = "name">Andy Hwang</p>
+				<p class = "title">Head of Design</p>
+			</div>
+
+<!-- 		<div class = "people-grid">
+				<a href = ""><img class = "profile" src = "img/person.jpg"/></a>
+				<p class = "name">??????</p>
+				<p class = "title">Join Us!</p>
+			</div>
+
+			<div class = "people-grid">
+				<a href = ""><img class = "profile" src = "img/person.jpg"/></a>
+				<p class = "name">??????</p>
+				<p class = "title">Join Us!</p>
+			</div> -->
+
+	</section>
+</body>
+</html>
